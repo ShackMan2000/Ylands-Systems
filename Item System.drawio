@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-08T14:20:50.104Z" agent="5.0 (Windows)" etag="KCnd3I9xejB36QpPYQtv" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-08T14:22:01.218Z" agent="5.0 (Windows)" etag="fDnbF3Q1ShlsLBepVPBT" version="20.2.2" type="github">
   <diagram id="cen_i1RHmq_5vS7J9Gh5" name="Page-1">
     <mxGraphModel dx="4148" dy="1929" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -10,8 +10,8 @@
         <mxCell id="NL6LZe0rqqw29WmjIXu0-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="NL6LZe0rqqw29WmjIXu0-2" target="NL6LZe0rqqw29WmjIXu0-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NL6LZe0rqqw29WmjIXu0-2" value="&lt;div&gt;public class ItemBase : ScriptableObject&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;p style=&quot;margin-bottom: 0in; line-height: 100%&quot; align=&quot;left&quot;&gt;&lt;br/&gt;&lt;font face=&quot;Liberation Sans, sans-serif&quot;&gt;&lt;font style=&quot;font-size: 12pt&quot; size=&quot;3&quot;&gt;&lt;span style=&quot;text-decoration: none&quot;&gt;&lt;span style=&quot;font-style: normal&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Defines&lt;br/&gt;characteristics like the name, color etc&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="-1405" y="-520" width="260" height="140" as="geometry" />
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-2" value="&lt;div&gt;&lt;b&gt;public class ItemBase : ScriptableObject&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;p style=&quot;margin-bottom: 0in; line-height: 100%&quot; align=&quot;left&quot;&gt;&lt;br&gt;&lt;font face=&quot;Liberation Sans, sans-serif&quot;&gt;&lt;font style=&quot;font-size: 12pt&quot; size=&quot;3&quot;&gt;&lt;span style=&quot;text-decoration: none&quot;&gt;&lt;span style=&quot;font-style: normal&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Defines&lt;br&gt;characteristics like the name, color etc. This is data that does not change during gameplay, it is defined by the designers.&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1405" y="-520" width="305" height="120" as="geometry" />
         </mxCell>
         <mxCell id="NL6LZe0rqqw29WmjIXu0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="NL6LZe0rqqw29WmjIXu0-3">
           <mxGeometry relative="1" as="geometry">
