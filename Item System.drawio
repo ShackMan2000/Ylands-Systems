@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-08T13:19:29.820Z" agent="5.0 (Windows)" etag="xZV1Q_2hP_nqW07yQiEn" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-08T13:51:30.959Z" agent="5.0 (Windows)" etag="JiYOX0oeDCIEWeDuhfLA" version="20.2.2" type="github">
   <diagram id="cen_i1RHmq_5vS7J9Gh5" name="Page-1">
     <mxGraphModel dx="3098" dy="1825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,11 +7,25 @@
         <mxCell id="xwblB8WFmp-KYpaRouue-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="120" y="110" width="350" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="xwblB8WFmp-KYpaRouue-2" value="public class ItemStack" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="-1040" y="-210" width="180" height="180" as="geometry" />
+        <mxCell id="xwblB8WFmp-KYpaRouue-2" value="&lt;div&gt;public class ItemStack&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ItemBase type;&lt;/div&gt;&lt;div&gt;int amount;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="-910" y="-190" width="170" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="9ayToyOtu8oUKvdpPZHS-1" value="Suggested changes (write down your name for better discussion)&lt;br&gt;&lt;br&gt;&lt;div&gt;Shackman: There should only be one class responsible for creating instances of ItemStack in the entire game. That makes it much easier to keep track of, as well as implement object pooling.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A factory pattern could be used, with ItemManager being the factory.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="-1450" y="-170" width="280" height="280" as="geometry" />
+        <mxCell id="9ayToyOtu8oUKvdpPZHS-1" value="&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Suggested changes (write down your name for better discussion)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;Shackman: There should only be one class responsible for creating instances of ItemStack in the entire game. That makes it much easier to keep track of, as well as implement object pooling.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A factory pattern could be used, with ItemManager being the factory.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="-1500" y="-110" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-2" value="&lt;div&gt;public class ItemBase : ScriptableObject&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1270" y="-280" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="NL6LZe0rqqw29WmjIXu0-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-840" y="-320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-3" value="&lt;div&gt;public abstract class Slot : MonoBehaviour&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ItemStack _itemInSlot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-890" y="-530" width="370" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-890" y="-320" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
