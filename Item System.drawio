@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-08T14:00:23.093Z" agent="5.0 (Windows)" etag="c3t17GYs80SP6tU2tixe" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-08T14:08:30.751Z" agent="5.0 (Windows)" etag="mU7NBTHgVcMZ2DMr-aM0" version="20.2.2" type="github">
   <diagram id="cen_i1RHmq_5vS7J9Gh5" name="Page-1">
     <mxGraphModel dx="3098" dy="1825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,14 +7,14 @@
         <mxCell id="xwblB8WFmp-KYpaRouue-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="120" y="110" width="350" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="xwblB8WFmp-KYpaRouue-2" value="&lt;div&gt;public class ItemStack&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ItemBase type;&lt;/div&gt;&lt;div&gt;int amount;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="-910" y="-190" width="170" height="170" as="geometry" />
-        </mxCell>
         <mxCell id="9ayToyOtu8oUKvdpPZHS-1" value="&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Suggested changes (write down your name for better discussion)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;Shackman: There should only be one class responsible for creating instances of ItemStack in the entire game. That makes it much easier to keep track of, as well as implement object pooling. Right now Itemstacks are being created and destroyed, while they could simply be reused to create less garbage (less garbage collection = better performance)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A factory pattern could be used, with ItemManager being the factory.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="-1630" y="-100" width="280" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="NL6LZe0rqqw29WmjIXu0-2" value="&lt;div&gt;public class ItemBase : ScriptableObject&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="-1270" y="-280" width="260" height="140" as="geometry" />
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="NL6LZe0rqqw29WmjIXu0-2" target="NL6LZe0rqqw29WmjIXu0-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-2" value="&lt;div&gt;public class ItemBase : ScriptableObject&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;p style=&quot;margin-bottom: 0in; line-height: 100%&quot; align=&quot;left&quot;&gt;&lt;br/&gt;&lt;font face=&quot;Liberation Sans, sans-serif&quot;&gt;&lt;font style=&quot;font-size: 12pt&quot; size=&quot;3&quot;&gt;&lt;span style=&quot;text-decoration: none&quot;&gt;&lt;span style=&quot;font-style: normal&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;Defines&lt;br/&gt;characteristics like the name, color etc&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1405" y="-520" width="260" height="140" as="geometry" />
         </mxCell>
         <mxCell id="NL6LZe0rqqw29WmjIXu0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="NL6LZe0rqqw29WmjIXu0-3">
           <mxGeometry relative="1" as="geometry">
@@ -22,13 +22,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NL6LZe0rqqw29WmjIXu0-3" value="&lt;div&gt;public abstract class Slot : MonoBehaviour&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ItemStack _itemInSlot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// Can take in an item and represent it in the game world&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="-890" y="-530" width="370" height="110" as="geometry" />
+          <mxGeometry x="-840" y="-540" width="370" height="110" as="geometry" />
         </mxCell>
         <mxCell id="NL6LZe0rqqw29WmjIXu0-6" value="&lt;div&gt;public class ContainerSlot : Slot&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Adds UI functionality to Slot&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="-890" y="-320" width="270" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NL6LZe0rqqw29WmjIXu0-8" value="&lt;div&gt;public class InventoryManager : StaticMonoBehaviour&amp;lt;InventoryManager&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;p style=&quot;margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%; text-decoration: none&quot; align=&quot;left&quot;&gt;&lt;br&gt;&lt;font face=&quot;Liberation Sans, sans-serif&quot;&gt;&lt;font style=&quot;font-size: 12pt&quot; size=&quot;3&quot;&gt;When adding an instance of ‘ItemStack’ via the InventoryManager, it&lt;br&gt;checks if there already is an ItemStack representing the same kind of&lt;br&gt;item (both referencing the same instance of ‘ItemBase’), and in&lt;br&gt;that case only the amount is added.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="-1240" width="530" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-11" value="public class ItemStack&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ItemBase type;&lt;/div&gt;&lt;div&gt;int amount;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1405" y="-310" width="315" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="NL6LZe0rqqw29WmjIXu0-13" value="&lt;div&gt;public class ItemContainer : MonoBehaviour&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;public List&amp;lt;ContainerSlot&amp;gt; slots; // list for each slot in inventory or hotbar&lt;br&gt;public List&amp;lt;ItemStack&amp;gt; itemStacks;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1010" y="-201" width="540" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
