@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-13T10:37:47.953Z" agent="5.0 (Windows)" etag="PWd-JR9BeCThP9ZgwHLu" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-13T10:49:10.206Z" agent="5.0 (Windows)" etag="RBKjEPu-6KQIVb9kTmAL" version="20.2.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1157" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1083" dy="1730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -10,6 +10,11 @@
         <mxCell id="4aD3eGxU6IAuOZV2RI9L-2" value="Find via raycast" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-7">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="370" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4aD3eGxU6IAuOZV2RI9L-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="&lt;div&gt;InteractionFinder&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -27,24 +32,45 @@
         <mxCell id="4aD3eGxU6IAuOZV2RI9L-1" value="&lt;div&gt;Interaction 3&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="310" y="360" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="4aD3eGxU6IAuOZV2RI9L-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4aD3eGxU6IAuOZV2RI9L-8">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="450" y="120" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="4aD3eGxU6IAuOZV2RI9L-8" value="&lt;div&gt;Interaction System 1&lt;/div&gt;&lt;div&gt;(InteractionsViaUI)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="560" y="90" width="160" height="30" as="geometry" />
+          <mxGeometry x="140" y="-60" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="4aD3eGxU6IAuOZV2RI9L-10" value="&lt;div&gt;Listen to findings&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4aD3eGxU6IAuOZV2RI9L-9">
+        <mxCell id="4aD3eGxU6IAuOZV2RI9L-17" value="&lt;div&gt;Trigger&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4aD3eGxU6IAuOZV2RI9L-9">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="450" y="145" as="targetPoint" />
+            <mxPoint x="460" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="310" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="4aD3eGxU6IAuOZV2RI9L-9" value="&lt;div&gt;Interaction System 2&lt;br&gt;&lt;/div&gt;&lt;div&gt;(InteractionsViaInputActions)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="560" y="130" width="160" height="30" as="geometry" />
+          <mxGeometry x="430" y="-60" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4aD3eGxU6IAuOZV2RI9L-12" value="&lt;div&gt;Jellies&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="190" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4aD3eGxU6IAuOZV2RI9L-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4aD3eGxU6IAuOZV2RI9L-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="-40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="-15" />
+              <mxPoint x="330" y="-15" />
+              <mxPoint x="330" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4aD3eGxU6IAuOZV2RI9L-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4aD3eGxU6IAuOZV2RI9L-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="-40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="-15" />
+              <mxPoint x="400" y="-15" />
+              <mxPoint x="400" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4aD3eGxU6IAuOZV2RI9L-19" value="&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Events&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;StartedLookingAtInteractable&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;StoppedLookingAtInteractable&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="300" y="10" width="140" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
