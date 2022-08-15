@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-15T19:07:10.278Z" agent="5.0 (Windows)" etag="3_mbBrP4alsWLdlXNHaN" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-15T19:08:10.989Z" agent="5.0 (Windows)" etag="FiBz5ANG2GxYt6woJXYU" version="20.2.4" type="github">
   <diagram id="cen_i1RHmq_5vS7J9Gh5" name="Page-1">
     <mxGraphModel dx="4228" dy="1970" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -40,7 +40,7 @@
           <mxGeometry x="-925" y="-80" width="365" height="51" as="geometry" />
         </mxCell>
         <mxCell id="NL6LZe0rqqw29WmjIXu0-16" value="&lt;b&gt;Summary&lt;/b&gt;&lt;br&gt;&lt;br&gt;Items in the game are instances of the class ‘ItemStack’, which is not a monobehaviour and can be created at runtime. Each instance of ‘ItemStack’ defines the amount and what kind of item it is. The latter one is defined by having a reference to an instance of the scriptable object class ‘ItemBase’. This class defines characteristics like the name, color etc. &lt;br&gt;&lt;br&gt;An instance of ‘ItemStack’ can be created anywhere on the fly, you only need a reference to an instance of the scriptable object ‘ItemBase’ (a file in the projects folder) to pass it into the constructor. &lt;br&gt;&lt;br&gt;&lt;div&gt;The instance of ‘ItemStack’ is stored in a ‘Slot’ (Monobehaviour). ItemContainer holds a list of ‘Slot’. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Container slot inherits from Slot and adds UI functionailty. Similarly ItemContainerHotbar inherits from ItemContainer and adds UI functionality.&amp;nbsp; g&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Inventory&lt;/b&gt;&lt;br&gt;&lt;br&gt;The inventory basically consist of two instances of ‘ItemContainer’, one is the hotbar (inherits from ‘ItemContainer’) and the other one the inventory.&lt;br&gt;Those are controlled by the static class ‘InventoryManager’. When adding an ItemStack to the inventory, it gets placed in the hotbar if there is free space, otherwise it goes inside the inventory.&lt;br&gt;&lt;br&gt;When adding an instance of ‘ItemStack’ via the InventoryManager, it checks if there already is an ItemStack representing the same kind of item (both referencing the same instance of ‘ItemBase’), and in that case only the amount is added." style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=16;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="-2430" y="-680" width="950" height="535" as="geometry" />
+          <mxGeometry x="-2480" y="-750" width="950" height="535" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
